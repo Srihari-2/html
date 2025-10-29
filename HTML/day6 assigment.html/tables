@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr border = "2px" cellspaning="200px" cellpadding="300px">
+            <td colspan="2">c1</td>
+            <!-- <td>c2</td> -->
+            <td>c3</td>
+            <td>c4</td>
+        </tr>
+       
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Polisetty Sri Hari — Resume</title>
+
+  <style>
+    :root{
+      --accent:#0f62fe;
+      --muted:#6b7280;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --border:#d1d5db;
+      --max-width:900px;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#111827;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:32px auto;
+      padding:20px;
+    }
+
+    .resume{
+      display:grid;
+      grid-template-columns: 1fr 330px;
+      gap:20px;
+    }
+
+    @media (max-width:880px){
+      .resume{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background:var(--card);
+      border:1.5px solid var(--border);
+      border-radius:10px;
+      box-shadow: 0 3px 10px rgba(15,23,42,0.05);
+      padding:20px;
+    }
+
+    header.header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      border-bottom:1.5px solid var(--border);
+      padding-bottom:12px;
+      margin-bottom:18px;
+    }
+
+    .avatar{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),#06b6d4);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:26px;
+    }
+
+    h1{
+      margin:0;
+      font-size:22px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:4px;
+    }
+
+    .contact-list{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .section{
+      border:1px solid var(--border);
+      border-radius:8px;
+      padding:12px 16px;
+      margin-bottom:14px;
+      background:#fafafa;
+    }
+
+    .section-title{
+      border-bottom:1px solid var(--border);
+      padding-bottom:4px;
+      font-weight:600;
+      color:#0f172a;
+      margin-bottom:10px;
+    }
+
+    .summary{
+      font-size:14px;
+      line-height:1.6;
+      color:#111827;
+    }
+
+    .item{
+      margin-bottom:10px;
+      padding-bottom:8px;
+      border-bottom:1px dashed var(--border);
+    }
+
+    .item:last-child{ border-bottom:none; }
+
+    .job-title{
+      font-weight:700;
+      font-size:15px;
+      margin:0;
+    }
+
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+      margin-top:3px;
+    }
+
+    ul.plain{
+      margin:8px 0 0 16px;
+      padding:0;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+    }
+
+    .skill-chip{
+      border:1px solid var(--border);
+      background:#f9fafb;
+      color:#0f172a;
+      padding:5px 8px;
+      border-radius:6px;
+      font-size:13px;
+    }
+
+    .links a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+
+    hr{
+      border:none;
+      border-top:1px solid var(--border);
+      margin:12px 0;
+    }
+
+    footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid var(--border);
+      padding-top:10px;
+    }
+
+    @media print{
+      body{ background:white; }
+      .card{ box-shadow:none; border:1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume">
+
+      <!-- Left (Main Content) -->
+      <main class="card">
+        <header class="header">
+          <div class="avatar">PS</div>
+          <div>
+            <h1>Polisetty Sri Hari</h1>
+            <div class="sub">Aspiring Computer Science Graduate — B.Tech CSE (2021–2025)</div>
+            <div class="contact-list">
+              <div>📞 +91-9247886557</div>
+              <div>✉️ <a href="mailto:sriharisaisaran@gmail.com">sriharisaisaran@gmail.com</a></div>
+            </div>
+          </div>
+        </header>
+
+        <section class="section">
+          <div class="section-title">Summary</div>
+          <p class="summary">
+            Enthusiastic Computer Science undergraduate with a passion for Machine Learning, Data Analytics, and
+            Intelligent Systems. Experienced in developing hybrid models integrating deep learning and fuzzy logic,
+            with multiple research papers presented at national and international conferences.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Projects</div>
+
+          <div class="item">
+            <p class="job-title">Forest Fire Prediction System</p>
+            <div class="meta">Python | XGBoost | CBFR Model | Google Colab</div>
+            <ul class="plain">
+              <li>Developed a hybrid wildfire prediction model integrating LSTM and XGBoost.</li>
+              <li>Implemented real-time data processing and contextual risk scoring (CBFR).</li>
+              <li>Enhanced accuracy and interpretability using ensemble techniques.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <p class="job-title">Student Performance Prediction</p>
+            <div class="meta">Bipartite Graphs | KNN | Logistic Regression</div>
+            <ul class="plain">
+              <li>Graph-based student performance prediction for early risk detection.</li>
+              <li>Applied logistic regression and KNN on academic datasets to identify performance clusters.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <p class="job-title">Crop Yield & MSP Predictor</p>
+            <div class="meta">Power BI | Python | Regression</div>
+            <ul class="plain">
+              <li>Analyzed 19 years of agricultural data to identify crop yield trends.</li>
+              <li>Built regression models to forecast yield and recommend MSP values.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Education</div>
+          <div class="item">
+            <p class="job-title">SRM Institute of Science and Technology</p>
+            <div class="meta">B.Tech in Computer Science and Engineering | 2021–2025 | CGPA: 8.3</div>
+          </div>
+
+          <div class="item">
+            <p class="job-title">Vignana Bharathi Junior College</p>
+            <div class="meta">Intermediate | 2019–2021 | 87%</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Achievements & Extracurriculars</div>
+          <ul class="plain">
+            <li>Presented paper “Forest Fire Prediction: A Hybrid Approach...” at ICSBPIM 2025.</li>
+            <li>Research supported by Kazan Federal University, published with Springer Nature.</li>
+            <li>Presented “Unveiling Academic Success: Harnessing Graph...” at CGAC 2024.</li>
+            <li>Completed certifications in Machine Learning and Data Science on Coursera.</li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- Right (Sidebar) -->
+      <aside class="card">
+        <div class="section">
+          <div class="section-title">Links & Profiles</div>
+          <div class="links" style="font-size:14px;">
+            <div>🔗 <a href="https://www.linkedin.com/in/sri-hari-376b6b239/" target="_blank">LinkedIn</a></div>
+            <div>🐙 <a href="https://github.com/Srihari-2" target="_blank">GitHub</a></div>
+            <div>📧 <a href="mailto:sriharisaisaran@gmail.com">sriharisaisaran@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Technical Skills</div>
+          <div class="skills">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">HTML & CSS</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">TensorFlow</span>
+            <span class="skill-chip">Django</span>
+            <span class="skill-chip">Power BI</span>
+            <span class="skill-chip">Scikit-learn</span>
+            <span class="skill-chip">Google Colab</span>
+            <span class="skill-chip">Git</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Core Subjects</div>
+          <ul class="plain" style="font-size:14px;">
+            <li>Data Structures & Algorithms</li>
+            <li>Operating Systems</li>
+            <li>DBMS</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Position of Responsibility</div>
+          <p class="job-title">Community Head — Discipline Committee</p>
+          <div class="meta">SRM University | 2022–2024</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 Polisetty Sri Hari | Resume with Borders
+    </footer>
+  </div>
+</body>
+</html>

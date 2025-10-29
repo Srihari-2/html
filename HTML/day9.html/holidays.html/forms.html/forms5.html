@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your Account</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #E8B8A3 0%, #B597DE 100%);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 420px;
+            padding: 18px 0 35px 0;
+            margin: 0 auto;
+        }
+        .step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .step-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border-radius: 50%;
+            line-height: 32px;
+            color: #44A662;
+            font-weight: bold;
+            border: 2px solid #44A662;
+            margin-bottom: 4px;
+        }
+        .step.active .step-number {
+            background: #44A662;
+            color: #fff;
+        }
+        .step-label {
+            display: block;
+            font-size: 0.9em;
+            color: #fff;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+        .form-box {
+            background: #fff;
+            width: 370px;
+            margin: 24px auto 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 32px #0002;
+            padding: 28px 33px 23px 33px;
+            text-align: center;
+        }
+        .form-box h2 {
+            font-size: 1.32em;
+            font-weight: 400;
+            margin-bottom: 6px;
+            color: #454545;
+        }
+        .form-box p {
+            color: #888;
+            font-size: 1em;
+            margin-bottom: 18px;
+        }
+        .form-box input[type="email"], .form-box input[type="password"] {
+            width: 94%;
+            padding: 13px 12px;
+            margin-bottom: 18px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #d2d2d2;
+            outline: none;
+            background: #FAFAFA;
+            transition: border 0.2s;
+        }
+        .form-box input[type="email"]:focus, .form-box input[type="password"]:focus {
+            border-color: #44A662;
+        }
+        .form-box button {
+            width: 102px;
+            padding: 12px 0;
+            background: #44A662;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 7px;
+            transition: background 0.18s;
+        }
+        .form-box button:hover {
+            background: #26995a;
+        }
+        /* Stepper connecting lines */
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            right: -50%;
+            width: 98%;
+            height: 3px;
+            background: #eee;
+            z-index: 0;
+        }
+        .step.active:not(:last-child)::after {
+            background: #44A662;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="step active">
+            <div class="step-number">1</div>
+            <span class="step-label">ACCOUNT SETUP</span>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <span class="step-label">SOCIAL PROFILES</span>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <span class="step-label">PERSONAL DETAILS</span>
+        </div>
+    </div>
+    <div class="form-box">
+        <h2>CREATE YOUR ACCOUNT</h2>
+        <p>This is step 1</p>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

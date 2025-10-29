@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Table</title>
+    <style>
+        body {
+            background: #00f0ff;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 90%;
+            background: #00f0ff;
+        }
+        th, td {
+            border: 2px solid #00b3b3;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background: #00f0ff;
+        }
+        .day {
+            font-size: 2em;
+            font-weight: bold;
+            background: #00f0ff;
+        }
+        .begin {
+            background: orange;
+        }
+        .end {
+            background: #008000;
+            color: #fff;
+        }
+        .end-blue {
+            background: #0000ff;
+            color: #fff;
+        }
+        .topic {
+            text-align: left;
+        }
+        .footer {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="day" rowspan="2">day</td>
+            <td colspan="2">schedule</td>
+            <td rowspan="2">seminar<br>topic</td>
+        </tr>
+        <tr>
+            <td>begin</td>
+            <td>end</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td class="begin">8:00 a.m.</td>
+            <td class="end-blue">9:00 p.m.</td>
+            <td class="topic">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td class="begin">8:00 a.m.</td>
+            <td class="end-blue">9:00 p.m.</td>
+            <td class="topic">Validity DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tuesday</td>
+            <td class="begin">8:00 a.m.</td>
+            <td class="end">11:00 a.m.</td>
+            <td class="topic">XPath</td>
+        </tr>
+        <tr>
+            <td class="begin">11:00 a.m.</td>
+            <td class="end">2:00 p.m.</td>
+            <td class="topic">XSL Tranformatics</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td class="end">3:00 p.m.</td>
+            <td class="end-blue">6:00 p.m.</td>
+            <td class="topic">XSL Formatting Objects</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="begin">8:00 a.m.</td>
+            <td class="end">12:00 p.m.</td>
+            <td class="topic">XSL Formatting Objects</td>
+        </tr>
+    </table>
+    <div class="footer">Table By-Ghanendra Yadav</div>
+</body>
+</html>

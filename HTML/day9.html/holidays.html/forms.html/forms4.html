@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, serif;
+            background-color: #fff;
+        }
+        .form-container {
+            width: 540px;
+            margin: 40px auto;
+            border: 1px solid #888;
+            padding: 18px 25px;
+            background: #fafafa;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+        label {
+            width: 120px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 260px;
+            margin-bottom: 8px;
+            padding: 4px;
+            font-size: 1em;
+        }
+        .info-note {
+            margin-top: 8px;
+            font-size: 0.93em;
+            color: #555;
+            margin-left: 120px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 13px auto 5px auto;
+            padding: 6px 22px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <div class="form-container">
+        <form>
+            <div>
+                <label for="fname">First name:*</label>
+                <input type="text" id="fname" name="fname" required />
+            </div>
+            <div>
+                <label for="lname">Last name:*</label>
+                <input type="text" id="lname" name="lname" required />
+            </div>
+            <div>
+                <label for="street">Street address:</label>
+                <input type="text" id="street" name="street" />
+            </div>
+            <div>
+                <label for="town">Town/city:</label>
+                <input type="text" id="town" name="town" />
+            </div>
+            <div>
+                <label for="postcode">Postcode/zip:</label>
+                <input type="text" id="postcode" name="postcode" />
+            </div>
+            <div>
+                <label for="telephone">Telephone:</label>
+                <input type="text" id="telephone" name="telephone" />
+            </div>
+            <div>
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" />
+            </div>
+            <div>
+                <label for="email">Email address:*</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="info-note">
+                Fields marked * are required.
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

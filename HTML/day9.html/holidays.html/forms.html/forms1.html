@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .browser {
+      width: 350px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    } 
+    .top-bar {
+      background-color: #ffe4d6;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+    .top-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .globe {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #7a6fb2;
+      display: inline-block;
+    }
+    .buttons {
+      display: flex;
+      gap: 6px;
+    }
+    .btn {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .red { background-color: #f87171; }
+    .yellow { background-color: #facc15; }
+    .green { background-color: #4ade80; }
+    form {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 200px;
+      padding: 4px;
+      border: 1px solid #888;
+      border-radius: 2px;
+    }
+
+    button {
+      margin-top: 6px;
+      width: 80px;
+      padding: 4px;
+      background-color: #e0e0e0;
+      border: 1px solid #666;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d4d4d4;
+    }
+  </style>
+</head>
+<body>
+  <div class="browser">
+    <div class="top-bar">
+      <div class="top-left">
+        <span class="globe"></span>
+      </div>
+      <div class="buttons">
+        <span class="btn red"></span>
+        <span class="btn yellow"></span>
+        <span class="btn green"></span>
+      </div>
+    </div>
+
+    <form>
+      <label>First name:
+        <input type="text" name="first" />
+      </label>
+      <label>Last name:
+        <input type="text" name="last" />
+      </label>
+      <label>email:
+        <input type="email" name="email" />
+      </label>
+      <label>password:
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Login!</button>
+    </form>
+  </div>
+</body>
+</html>
